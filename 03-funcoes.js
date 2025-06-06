@@ -4,8 +4,8 @@ exemplo1(); //chamada da função
 
 //Sintaxe tradicional, função nomeada
 //A ordem de declaração da função NESTE NÃO IMPORTA
-function exemplo1(){
-   console.log("Função nomeada");
+function exemplo1() {
+  console.log("Função nomeada");
 }
 
 function separador() {
@@ -20,9 +20,9 @@ separador();
 // Sintaxe tradicional , função anônima
 // Nesta sintaxe, a ordem IMPORTA
 
-const exemplo2 = function(){
-    console.log("Função anônima");
-    
+const exemplo2 = function () {
+  console.log("Função anônima");
+
 };
 
 // no caso da Anônima a chamada sempre é depois da declaração da função
@@ -39,7 +39,7 @@ separador();
 
 
 function menos(a, b) {
-   return a - b;  
+  return a - b;
 }
 
 //2) Chame essa função pelo menos duas vezes passando valores diferentes e guardando os resultados em variáveis de escopo global
@@ -60,15 +60,28 @@ separador();
 // Nesta sintaxe, a ordem de declaração IMPORTA
 
 const exemplo3 = () => {
-   console.log("Arrow Function"); 
+  console.log("Arrow Function");
 };
 
 exemplo3(); //Chamada deve ser feita após a declaração
 
-const saudacao = (nome) => {
-   console.log("Olá "+nome); 
-};
+// Quando a função tem SOMENTE UM parâmetro, podemos remover os parênteses. E quando ela faz SOMENTE UMA ÚNICA ação (ideal), podemos remover as chaves e deixar em uma linha.
+const saudacao = nome => console.log("Olá " + nome);
 
 saudacao("Roberto");
 saudacao("Cibele");
 saudacao("Lucia");
+
+separador();
+
+//Com retorno EXPLÍCITO
+const calcularMetadeSintaxeCompleta = (valor) => {
+  return valor / 2;
+}
+
+console.log(calcularMetadeSintaxeCompleta(20));
+
+
+// Com retorno IMPLÍCITO
+const calcularMetade = valor => valor / 2;
+console.log(calcularMetade(20));
