@@ -35,6 +35,7 @@ separador();
 
 //function calculadiferenca(valor1 , valor2){
 // let diferença = valor1 + valor2} - isso é chamada local não em bloco
+// não use esse tipo de estrutura
 
 
 function menos(a, b) {
@@ -52,3 +53,22 @@ let resultado2 = menos(50, 20);
 
 let mensagem3 = `Os Resultados foram: ${resultado1} e ${resultado2}`;
 console.log(mensagem3);
+
+separador();
+
+// Sintaxe moderna, função flecha/seta (arrow function)
+// Nesta sintaxe, a ordem de declaração IMPORTA
+
+const exemplo3 = () => {
+   console.log("Arrow Function"); 
+};
+
+exemplo3(); //Chamada deve ser feita após a declaração
+
+const saudacao = (nome) => {
+   console.log("Olá "+nome); 
+};
+
+saudacao("Roberto");
+saudacao("Cibele");
+saudacao("Lucia");
