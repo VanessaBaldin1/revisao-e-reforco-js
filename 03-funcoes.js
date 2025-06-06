@@ -85,3 +85,17 @@ console.log(calcularMetadeSintaxeCompleta(20));
 // Com retorno IMPLÍCITO
 const calcularMetade = valor => valor / 2;
 console.log(calcularMetade(20));
+
+
+separador();
+
+//Exercicio de refaturação
+
+//1)Reescreva a função do exercício anterior usando a sintaxe de arrow function
+const calcularSubtracao = (a, b) => a - b;
+
+
+
+//2) Teste fazendo novas chamadas e novas saídas
+
+console.log(calcularSubtracao(20,10));
