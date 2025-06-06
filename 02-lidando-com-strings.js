@@ -30,4 +30,3 @@ let mensagem2 = `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro em
 
 console.log(mensagem2);
 
-
