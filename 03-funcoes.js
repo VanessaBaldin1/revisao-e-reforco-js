@@ -33,6 +33,10 @@ separador();
 
 // 1) Crie uma função (qualquer sintaxe) que receba dois valores numéricos como parâmetros, calcule a diferença entre estes valores e retorne o resultado calculado
 
+//function calculadiferenca(valor1 , valor2){
+// let diferença = valor1 + valor2} - isso é chamada local não em bloco
+
+
 function menos(a, b) {
    return a - b;  
 }
