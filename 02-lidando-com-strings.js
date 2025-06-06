@@ -25,3 +25,9 @@ console.log(mensagem1);
 
 
 // TEMPLATE STRING/LITERAL
+
+let mensagem2 = `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro em ${cidade}/${estado}. Sou ${idade >= 18 ? 'maior' : 'menor'} de idade.`;
+
+console.log(mensagem2);
+
+
