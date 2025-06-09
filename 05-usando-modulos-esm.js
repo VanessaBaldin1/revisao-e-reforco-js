@@ -20,12 +20,24 @@ separador();
 console.log(alunos[1]);
 console.log(alunos);
 
+
+
 //loops
 for(const aluno of alunos){
    console.log(alunos);
    
 }
 
+
+//Uso de um 'alias/apelido' para evitar conflito de nomes (arquivo dados.js)
+import { pessoa, livro, alunos as marias} from './modulos-esm/dados.js';
+
+separador();
+
+// Acessando recursos do módulo 'dados.js'
+console.log(pessoa.nome);
+console.log(livro);
+console.log(marias); // lembre-se: personagens é um apelido para alunos
 
 
 
