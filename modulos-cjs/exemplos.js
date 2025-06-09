@@ -1,7 +1,7 @@
 'use strict';
 
 function minhaFuncao() {
-  console.log("Olá! Função criada em um moódulo");
+  console.log("Olá! Função criada em um módulo");
   
 }
 
