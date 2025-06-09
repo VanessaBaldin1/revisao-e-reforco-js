@@ -7,5 +7,10 @@ function saudacao(nome) {
 
 const clientes = ["Maycon", "Gabriel", "Júlia"];
 
+function separador() {
+  console.log("\n************************************************\n");
+}
+
+
 //exporta como objeto por isso utiliza {}
-export { saudacao, clientes };
+export { saudacao, clientes, separador };
