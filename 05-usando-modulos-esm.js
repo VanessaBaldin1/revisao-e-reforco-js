@@ -16,5 +16,16 @@ console.log(clientes);
 
 separador();
 
+//Acessando recursos do import de alunos
+console.log(alunos[1]);
+console.log(alunos);
+
+//loops
+for(const aluno of alunos){
+   console.log(alunos);
+   
+}
+
+
 
 
