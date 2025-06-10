@@ -15,15 +15,23 @@
     <script type="module">
       import { alunos } from "./modulos-esm/dados.js";
 
+
+      //Use seleção de elemento no DOM
       const lista = document.getElementById("lista-alunos");
       console.log(lista);
 
-      const item = document.createElement("li");
-      
-
-
+      //Use loop para percorrer os elementos do array
       for (const aluno of alunos) {
-        console.log(aluno);
+
+        //Criando um elemento <li>
+        let item = document.createElement("li");
+
+        //Adicionando conteúdo ao elemento li criado
+        item.innerHTML = aluno;
+
+        //Inserir o elemento criado e com o nome do aluno na lista
+        lista.appendChild(item);
+
       }
 
 
