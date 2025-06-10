@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 import { classificar } from "./modulos-esm/funcoes.js";
 import { separador } from "./modulos-esm/exemplos.js";
@@ -18,3 +18,20 @@ separador();
 //Spread para "espalhar" parâmetros para uma função
 console.log(classificar(...maisBandas));
 
+separador();
+
+//Spread em objetos
+const cliente = {
+  nome: "Ave",
+  cidade: "Belem do Para",
+  idade: 90,
+};
+
+const compra = {
+  ...cliente,
+  codigoPedido: "123xyz",
+  produtos: ["velas", "colar", "livro"],
+  total: 8566.97,
+};
+
+console.log(compra);
