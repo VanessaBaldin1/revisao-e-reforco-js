@@ -28,10 +28,11 @@ const cliente = {
 };
 
 const compra = {
-  ...cliente,
+  ...cliente, //copiando as propriedades de cliente para compra
   codigoPedido: "123xyz",
   produtos: ["velas", "colar", "livro"],
   total: 8566.97,
+  nome: "Joel", //sobreescrevendo uma propriedade que veio com spread
 };
 
 console.log(compra);
