@@ -62,6 +62,9 @@ console.log(converterLetraMaiuscula("amazonas"));
 console.log(converterLetraMinusculo("ESTADOS UNIDOS"));
 console.log(formatarvalorMoeda(58996.89));
 
+//exemplo de import * as recursos from "./modulos-esm/funcoes.js";
+// console.log(recursos.converterMaiuscula("tiago"));
+
 
 
 
