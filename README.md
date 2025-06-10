@@ -3,9 +3,9 @@
 ## Sobre escopo de variáveis e constantes
 
 - `var`: escopo GLOBAL
-- `let`: escopo BLOCO, podendo ser GLOBAL  dependendo de onde declarada
-- `const`: escopo BLOCO, podendo ser GLOBAL  dependendo de onde declarada. Obs.:
-**obrigatório** inicializar com algum valor.
+- `let`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada
+- `const`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada. Obs.:
+  **obrigatório** inicializar com algum valor.
 
 ## Módulos no JavaScript
 
@@ -18,7 +18,22 @@ Existem duas formas de uso:
 
 ```json
 {
-   "type": "module"
+  "type": "module"
 }
 ```
 
+---
+
+## Sobre os operadores REST e SPREAD (...)
+
+## Operador REST
+
+Objetivo do Operador REST (...)
+Capturar múltiplos argumentos ou elementos e agrupá-los em um único array.
+É útil para funções com número variável de parâmetros ou para extrair partes de arrays/objetos.
+
+## Operador Spread
+
+Objetivo do Operador SPREAD (...)
+Desempacotar elementos de arrays ou objetos em partes individuais.
+É usado para copiar, combinar ou passar dados de forma mais flexível e legível.
