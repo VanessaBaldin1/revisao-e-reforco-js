@@ -13,3 +13,7 @@ export const formatarvalorMoeda = valor => valor.toLocaleString('pt-br', {
 
 //export { converterLetraMaiuscula, converterLetraMinusculo, formatarvalorMoeda }
 
+//Usamos o rest operator para obter uma lista de parâmetros, não importando a quantidade
+export function classificar(...texto) {
+  return texto.sort();
+}

@@ -1,5 +1,6 @@
 'use strict';
 
+import { classificar } from './modulos-esm/funcoes.js'
 // Sobre o operador rest ...
 //Usamos o rest para mesclar uma relação de parâmetros/argumentos para uma função
 //Na prática, os parâmetros se comportam como um array podendo receber iterações via loop.
@@ -22,5 +23,11 @@ let resultado2 = somar(20, 60, 80, 90);
 
 console.log(resultado1);
 console.log(resultado2);
+
+console.log("---------------");
+
+console.log(classificar("Goiaba", "Amora", "Banana", "Abacate"));
+console.log(classificar("vermelho", "amarelo", "azul", "roxo", "verde", "cinza"));
+
 
 
