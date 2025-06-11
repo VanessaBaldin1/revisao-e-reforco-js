@@ -75,3 +75,21 @@ console.log(linguagem);
 console.log(teclado);
 console.log(numero);
 console.log(convertertexto("ana"));
+
+separador();
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
+
+//Desestruturação com operador rest
+
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); //virou um array
