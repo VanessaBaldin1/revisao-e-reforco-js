@@ -114,3 +114,17 @@ console.log(nome);
 console.log(instrumento);
 console.log(idade);
 console.log(banda);
+
+separador();
+
+const aluno = {
+  nome: "Ozzy",
+  cidade: "São Paulo",
+  estado: "SP",
+};
+
+//Desestruturação com alias/apelido em propriedade
+const { nome: nomeDoAluno, cidade, estado } = aluno;
+console.log(nomeDoAluno);
+console.log(cidade);
+console.log(estado);
