@@ -198,3 +198,22 @@ processarPedido(pedidoA);
 
 const pedidoB = ["Notebook", 2500];
 processarPedido(pedidoB);
+
+separador();
+//pode ter qualquer nome entre () parametro
+const exibirDados = (filme) => {
+  console.log(`Filme: ${filme.titulo} - Ano: ${filme.ano} \n`);
+};
+
+const filme1 = {
+  titulo: "o Hobbit",
+  ano: 2012,
+};
+
+const filme2 = {
+  titulo: "O Senhor dos Anéis",
+  ano: 2001,
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
