@@ -1,6 +1,7 @@
 "use strict";
 
 import { separador } from "./modulos-esm/exemplos.js";
+import cursos from "./modulos-esm/cursos.js";
 
 // map (mapear, mapeamento - transformar/gerar em outra coisa)
 //Passa por elementos de um array e realiza operações em cada um deles através de uma função callback, gerando um novo array de elementos transformados.
@@ -46,3 +47,15 @@ const frases1 = frases.map((frase) => {
 });
 
 console.log(frases1);
+
+separador();
+
+console.log("== Lista Completa de Cursos ==");
+console.log(cursos);
+console.log("=================================");
+
+separador();
+
+//Exemplo 2: gerar um novo array contendo somente os títulos dos cursos
+const titulos = cursos.map((curso) => curso.titulo);
+console.log(titulos);
