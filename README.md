@@ -37,3 +37,7 @@ Capturar múltiplos argumentos ou elementos e agrupá-los em um único array.
 Objetivo do Operador SPREAD (...)
 Desempacotar elementos de arrays ou objetos em partes individuais.
 É usado para copiar, combinar ou passar dados de forma mais flexível e legível.
+
+## Desestruturação
+
+A desestruturação em JavaScript é uma forma de extrair valores de arrays ou propriedades de objetos e atribuí-los diretamente a variáveis. Ela serve para tornar o código mais limpo, legível e eficiente, evitando a repetição de acessos a estruturas de dados. Com isso, é possível trabalhar com os dados de forma mais prática, especialmente em situações onde há muitos valores ou propriedades sendo manipulados.
