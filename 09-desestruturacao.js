@@ -201,8 +201,10 @@ processarPedido(pedidoB);
 
 separador();
 //pode ter qualquer nome entre () parametro
-const exibirDados = (filme) => {
-  console.log(`Filme: ${filme.titulo} - Ano: ${filme.ano} \n`);
+
+//Função como objeto sem desestruturação
+const exibirDados = ({ titulo, ano = "desconhecido" }) => {
+  console.log(`Filme: ${titulo} - Ano: ${ano} \n`);
 };
 
 const filme1 = {
@@ -212,7 +214,7 @@ const filme1 = {
 
 const filme2 = {
   titulo: "O Senhor dos Anéis",
-  ano: 2001,
+  //ano: 2001,
 };
 
 exibirDados(filme1);
