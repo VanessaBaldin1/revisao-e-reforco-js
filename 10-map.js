@@ -89,7 +89,21 @@ separador();
 //Exercicio
 // Gere uma nova de lista de cursos contendo apenas os titulos e as categorias
 
-const cursoslista = cursos.map((curso) => {
-  return { titulo: curso.titulo, categoria: curso.categoria };
-});
+//VERSÃO 1
+//const cursoslista = cursos.map((curso) => {
+// return { titulo: curso.titulo, categoria: curso.categoria };
+//});
+//console.log(cursoslista);
+
+//VERSÃO 2: COM RETORNO IMPLÍCITO -DESESTRUTURAÇÃO
+
+//(ATENÇÃO: USE PARÊTENSES NO RETORNO DO OBJETO)
+
+// tira o {} e a palavra return na arrow function,
+// PARA ARRAYS TAMBEM USAR () E [ ARRAY DENTTRO]
+
+const cursoslista = cursos.map((curso) => ({
+  titulo: curso.titulo,
+  categoria: curso.categoria,
+}));
 console.log(cursoslista);
