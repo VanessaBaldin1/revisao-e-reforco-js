@@ -43,3 +43,10 @@ const servicosPendentes = servicos.filter(
   (servico) => servico.status == "Pendente"
 );
 console.log(servicosPendentes);
+
+//REFATURAÇÃO DO FILTER
+
+const servicosPendentess = servicos.filter(
+  ({ status }) => status == "Pendente"
+);
+console.log(servicosPendentess);
