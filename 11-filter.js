@@ -86,3 +86,21 @@ const cursosNovos = cursos.filter(
     curso.preco > 600
 );
 console.log(cursosNovos);
+
+separador();
+
+//Desafio
+//Gerar um novo array com os cursos da categoria Back-End e COM O PREÇO atualizado com 10% de desconto. Para esta atividade você deverá combinar filter com map
+
+const cursosCategoria = cursos
+  .filter((curso) => {
+    return curso.categoria === "Back-End";
+  })
+  .map((curso) => {
+    return {
+      ...curso,
+      preco: curso.preco - curso.preco * 0.1,
+    };
+  });
+
+console.log(cursosCategoria);
