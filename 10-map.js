@@ -102,8 +102,21 @@ separador();
 // tira o {} e a palavra return na arrow function,
 // PARA ARRAYS TAMBEM USAR () E [ ARRAY DENTTRO]
 
-const cursoslista = cursos.map((curso) => ({
-  titulo: curso.titulo,
-  categoria: curso.categoria,
+//const cursoslista = cursos.map((curso) => ({
+//titulo: curso.titulo,
+//categoria: curso.categoria,
+//}));
+//console.log(cursoslista);
+
+//VERSÃO 3: usando desestruturação nos parâmetros de função
+
+//modifica somente o que esta () dentro do map tira curso e coloca map({ campos a serem acessados}), após isso tira o curso. deixando o acesso somente "titulo"
+//QUAL A PROPRIEDADE TEM O MESMO VALOR DA CAMPO EXEMPLO TITULO: TITULO, NÃO PRECISA FICAR IGUAL TIRA O TITULO:
+
+//Observação do professor: Note que podemos até mesmo deixar apenas o nome dos parâmetros como propriedades do objeto retornado. Ou seja, em vez de usar titulo: titulo, podemos deixar somente titulo, Em vez de usar categoria: categoria, basta categoria
+
+const cursoslista = cursos.map(({ titulo, categoria }) => ({
+  titulo,
+  categoria,
 }));
 console.log(cursoslista);
