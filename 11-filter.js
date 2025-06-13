@@ -25,3 +25,21 @@ console.log(vendasQueBateramMeta);
 //}
 //}
 //console.log(bateramMeta);
+
+separador();
+
+// Exemplo 2: filtrar serviços pendentes
+const servicos = [
+  { codigo: 1, tipo: "Limpeza", status: "Concluído" },
+  { codigo: 2, tipo: "Manutenção", status: "Pendente" },
+  { codigo: 3, tipo: "Reparo", status: "Pendente" },
+  { codigo: 4, tipo: "Consultoria", status: "Concluído" },
+  { codigo: 5, tipo: "Instalação", status: "Concluído" },
+];
+
+//faça o exercicio
+
+const servicosPendentes = servicos.filter(
+  (servico) => servico.status == "Pendente"
+);
+console.log(servicosPendentes);
